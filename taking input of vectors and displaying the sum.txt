@@ -1,0 +1,23 @@
+#include<stdio.h>
+struct vector{
+    int x;
+    int y;
+};
+void sum(struct vector v1,struct vector v2,struct vector add);
+int main(){
+    struct vector v1,v2,add;
+    printf("Enter first vector:\n");
+    scanf("%d\n%d",&v1.x,&v1.y);
+    printf("Enter second vector:\n");
+    scanf("%d\n%d",&v2.x,&v2.y);
+    sum(v1,v2,add);
+
+    return 0;
+}
+void sum(struct vector v1,struct vector v2,struct vector add)
+{
+    add.x=v1.x+v2.x;
+    add.y=v1.y+v2.y;
+    printf("%d\n",add.x);
+    printf("%d\n",add.y);
+}
